@@ -5,7 +5,7 @@ read_the_docs_build = os.environ.get('READTHEDOCS', None) == 'True'
 
 if read_the_docs_build:
     print("RTD build...")
-    subprocess.call('doxygen Doxyfile', shell=True)
+    #subprocess.call('doxygen Doxyfile', shell=True)
 else:
     print("Normal build...")
 # ----------------------------------------------------------------------------
@@ -69,9 +69,43 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_rtd_theme'
+if read_the_docs_build:
+    html_theme = 'default'
+else:
+    html_theme = 'sphinx_rtd_theme'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+pygments_style = 'sphinx'
+highlight_language = 'c'
+primary_domain = 'c'
+
+def run_invoke():
+    try:
+        retcode = subprocess.call("invoke doxy", shell=True)
+        print("C1")
+        if retcode < 0:
+            sys.stderr.write("invoke doxy terminated by signal %s" % (-retcode))
+    except OSError as e:
+        sys.stderr.write("doxygen execution failed: %s" % e)
+
+
+def generate_doxygen_xml(app):
+    if on_rtd:
+        #from subprocess import call
+        #shutil.rmtree(str(Path('doxyxml')), ignore_errors=True)
+        #shutil.rmtree(str(Path('doxyhtml')), ignore_errors=True)
+        doxdir = os.path.abspath(os.path.dirname(__file__))
+        print("Doxydir:")
+        print(doxdir)
+        subprocess.call('doxygen -v', cwd=str(Path(doxdir)), shell=True)
+        subprocess.call('doxygen Doxyfile', cwd=str(Path(doxdir)), shell=True)
+    else:
+        run_invoke()
+
+
+def setup(app):
+    app.connect("builder-inited", generate_doxygen_xml)
