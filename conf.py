@@ -1,5 +1,8 @@
 # Generate Doxygen XML Files
-import subprocess, os, sys
+import subprocess
+import os
+import sys
+from pathlib import Path
 
 read_the_docs_build = os.environ.get('READTHEDOCS', None) == 'True'
 
