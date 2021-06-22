@@ -2,13 +2,12 @@
 import subprocess
 import os
 import sys
-from pathlib import Path
 
 read_the_docs_build = os.environ.get('READTHEDOCS', None) == 'True'
 
 if read_the_docs_build:
     print("RTD build...")
-    #subprocess.call('doxygen Doxyfile', shell=True)
+    subprocess.call('doxygen Doxyfile; ls', shell=True)
 else:
     print("Normal build...")
 # ----------------------------------------------------------------------------
@@ -85,27 +84,3 @@ html_static_path = ['_static']
 pygments_style = 'sphinx'
 highlight_language = 'c'
 primary_domain = 'c'
-
-def run_invoke():
-    try:
-        retcode = subprocess.call("invoke doxy", shell=True)
-        print("C1")
-        if retcode < 0:
-            sys.stderr.write("invoke doxy terminated by signal %s" % (-retcode))
-    except OSError as e:
-        sys.stderr.write("doxygen execution failed: %s" % e)
-
-
-def generate_doxygen_xml(app):
-    if read_the_docs_build:
-        doxdir = os.path.abspath(os.path.dirname(__file__))
-        print("Doxydir:")
-        print(doxdir)
-        subprocess.call('doxygen -v', cwd=str(Path(doxdir)), shell=True)
-        subprocess.call('doxygen Doxyfile', cwd=str(Path(doxdir)), shell=True)
-    else:
-        run_invoke()
-
-
-def setup(app):
-    app.connect("builder-inited", generate_doxygen_xml)
