@@ -7,7 +7,7 @@ read_the_docs_build = os.environ.get('READTHEDOCS', None) == 'True'
 
 if read_the_docs_build:
     print("RTD build...")
-    subprocess.call('doxygen Doxyfile; ls', shell=True)
+    #subprocess.call('doxygen Doxyfile; ls', shell=True)
 else:
     print("Normal build...")
 # ----------------------------------------------------------------------------
