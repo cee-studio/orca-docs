@@ -94,10 +94,7 @@ def run_invoke():
 
 
 def generate_doxygen_xml(app):
-    if on_rtd:
-        #from subprocess import call
-        #shutil.rmtree(str(Path('doxyxml')), ignore_errors=True)
-        #shutil.rmtree(str(Path('doxyhtml')), ignore_errors=True)
+    if read_the_docs_build:
         doxdir = os.path.abspath(os.path.dirname(__file__))
         print("Doxydir:")
         print(doxdir)
