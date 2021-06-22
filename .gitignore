@@ -1,1 +1,4 @@
-doxydocs/*
+doxyxml
+doxyhtml
+doxylatex
+_build

@@ -46,7 +46,7 @@ extensions = [
 # Breathe Configuration
 
 breathe_domain_by_extension = { "h" : "c" }
-breathe_projects = { "Orca": "./doxydocs/xml" }
+breathe_projects = { "Orca": "./doxyxml" }
 breathe_default_project = 'Orca'
 
 breathe_default_members = ('members', 'undoc-members')
