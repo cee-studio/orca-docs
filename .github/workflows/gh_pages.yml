@@ -9,11 +9,11 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Doxygen Build
       - uses: mattnotmitt/doxygen-action@v1
-
+        with:
+            additional-packages: font-fira-code
       - name: Deploy
       - uses: peaceiris/actions-gh-pages@v3.7.3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_dir: ./public
