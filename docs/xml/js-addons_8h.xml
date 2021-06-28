@@ -5,13 +5,6 @@
     <includes local="yes">mujs.h</includes>
     <includes refid="user-agent_8h" local="yes">user-agent.h</includes>
     <incdepgraph>
-      <node id="4">
-        <label>stdint.h</label>
-      </node>
-      <node id="7">
-        <label>types.h</label>
-        <link refid="types_8h_source"/>
-      </node>
       <node id="1">
         <label>orca/common/js-addons.h</label>
         <link refid="js-addons_8h"/>
@@ -20,14 +13,8 @@
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="5">
-        <label>curl/curl.h</label>
-      </node>
-      <node id="8">
-        <label>logconf.h</label>
-      </node>
-      <node id="6">
-        <label>ntl.h</label>
+      <node id="4">
+        <label>stdint.h</label>
       </node>
       <node id="3">
         <label>user-agent.h</label>
@@ -42,6 +29,19 @@
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
+      </node>
+      <node id="5">
+        <label>curl/curl.h</label>
+      </node>
+      <node id="7">
+        <label>types.h</label>
+        <link refid="types_8h_source"/>
+      </node>
+      <node id="8">
+        <label>logconf.h</label>
+      </node>
+      <node id="6">
+        <label>ntl.h</label>
       </node>
       <node id="2">
         <label>mujs.h</label>

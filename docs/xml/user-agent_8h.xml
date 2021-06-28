@@ -15,19 +15,6 @@
       <node id="2">
         <label>stdint.h</label>
       </node>
-      <node id="5">
-        <label>types.h</label>
-        <link refid="types_8h_source"/>
-      </node>
-      <node id="3">
-        <label>curl/curl.h</label>
-      </node>
-      <node id="6">
-        <label>logconf.h</label>
-      </node>
-      <node id="4">
-        <label>ntl.h</label>
-      </node>
       <node id="1">
         <label>orca/common/user-agent.h</label>
         <link refid="user-agent_8h"/>
@@ -42,23 +29,28 @@
         <childnode refid="6" relation="include">
         </childnode>
       </node>
+      <node id="3">
+        <label>curl/curl.h</label>
+      </node>
+      <node id="5">
+        <label>types.h</label>
+        <link refid="types_8h_source"/>
+      </node>
+      <node id="6">
+        <label>logconf.h</label>
+      </node>
+      <node id="4">
+        <label>ntl.h</label>
+      </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="2">
-        <label>/home/lucasmull/Trabalho/orca/discord-internal.h</label>
-        <link refid="discord-internal_8h"/>
-      </node>
       <node id="5">
         <label>orca/common/js-addons.h</label>
         <link refid="js-addons_8h_source"/>
       </node>
-      <node id="4">
-        <label>/home/lucasmull/Trabalho/orca/reddit-internal.h</label>
-        <link refid="reddit-internal_8h_source"/>
-      </node>
-      <node id="3">
-        <label>/home/lucasmull/Trabalho/orca/github-adapter.h</label>
-        <link refid="github-adapter_8h_source"/>
+      <node id="2">
+        <label>/home/lucasmull/Trabalho/orca/discord-internal.h</label>
+        <link refid="discord-internal_8h"/>
       </node>
       <node id="1">
         <label>orca/common/user-agent.h</label>
@@ -71,6 +63,14 @@
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
+      </node>
+      <node id="4">
+        <label>/home/lucasmull/Trabalho/orca/reddit-internal.h</label>
+        <link refid="reddit-internal_8h_source"/>
+      </node>
+      <node id="3">
+        <label>/home/lucasmull/Trabalho/orca/github-adapter.h</label>
+        <link refid="github-adapter_8h_source"/>
       </node>
     </invincdepgraph>
     <innerclass refid="structua__resp__handle" prot="public">ua_resp_handle</innerclass>

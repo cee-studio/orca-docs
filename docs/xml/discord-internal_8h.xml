@@ -10,13 +10,13 @@
     <includes local="no">stdlib.h</includes>
     <includes local="no">stdint.h</includes>
     <includes local="yes">json-scanf.h</includes>
-    <includes local="yes">/home/lucasmull/Trabalho/orca-docs/docs/orca/cee-utils/ntl.h</includes>
+    <includes local="yes">/home/lucasmull/Trabalho/orca-docs/orca/cee-utils/ntl.h</includes>
     <includes local="yes">json-actor.h</includes>
     <includes local="no">stdarg.h</includes>
     <includes local="yes">json-actor-boxed.h</includes>
     <includes local="yes">logconf.h</includes>
-    <includes local="yes">/home/lucasmull/Trabalho/orca-docs/docs/orca/cee-utils/debug.h</includes>
-    <includes local="yes">/home/lucasmull/Trabalho/orca-docs/docs/orca/cee-utils/log.h</includes>
+    <includes local="yes">/home/lucasmull/Trabalho/orca-docs/orca/cee-utils/debug.h</includes>
+    <includes local="yes">/home/lucasmull/Trabalho/orca-docs/orca/cee-utils/log.h</includes>
     <includes local="no">stdio.h</includes>
     <includes local="no">stdbool.h</includes>
     <includes local="no">time.h</includes>
@@ -88,15 +88,22 @@
       <node id="7">
         <label>stdlib.h</label>
       </node>
-      <node id="16">
-        <label>/home/lucasmull/Trabalho/orca-docs/docs/orca/cee-utils/log.h</label>
-      </node>
       <node id="25">
         <label>cee-utils.h</label>
       </node>
-      <node id="23">
-        <label>types.h</label>
-        <link refid="types_8h_source"/>
+      <node id="20">
+        <label>user-agent.h</label>
+        <link refid="user-agent_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
       </node>
       <node id="13">
         <label>json-actor-boxed.h</label>
@@ -115,6 +122,10 @@
       </node>
       <node id="5">
         <label>string.h</label>
+      </node>
+      <node id="23">
+        <label>types.h</label>
+        <link refid="types_8h_source"/>
       </node>
       <node id="26">
         <label>discord-voice-connections.h</label>
@@ -135,17 +146,23 @@
       <node id="19">
         <label>time.h</label>
       </node>
+      <node id="10">
+        <label>/home/lucasmull/Trabalho/orca-docs/orca/cee-utils/ntl.h</label>
+      </node>
       <node id="9">
         <label>json-scanf.h</label>
       </node>
-      <node id="15">
-        <label>/home/lucasmull/Trabalho/orca-docs/docs/orca/cee-utils/debug.h</label>
+      <node id="16">
+        <label>/home/lucasmull/Trabalho/orca-docs/orca/cee-utils/log.h</label>
       </node>
       <node id="22">
         <label>ntl.h</label>
       </node>
-      <node id="10">
-        <label>/home/lucasmull/Trabalho/orca-docs/docs/orca/cee-utils/ntl.h</label>
+      <node id="15">
+        <label>/home/lucasmull/Trabalho/orca-docs/orca/cee-utils/debug.h</label>
+      </node>
+      <node id="17">
+        <label>stdio.h</label>
       </node>
       <node id="24">
         <label>websockets.h</label>
@@ -154,23 +171,6 @@
         </childnode>
         <childnode refid="14" relation="include">
         </childnode>
-      </node>
-      <node id="20">
-        <label>user-agent.h</label>
-        <link refid="user-agent_8h_source"/>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="21" relation="include">
-        </childnode>
-        <childnode refid="22" relation="include">
-        </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-      </node>
-      <node id="17">
-        <label>stdio.h</label>
       </node>
       <node id="2">
         <label>inttypes.h</label>

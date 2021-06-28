@@ -8,6 +8,10 @@
     <includedby refid="user-agent_8h" local="yes">orca/common/user-agent.h</includedby>
     <includedby refid="websockets_8h" local="yes">orca/common/websockets.h</includedby>
     <invincdepgraph>
+      <node id="10">
+        <label>orca/common/js-addons.h</label>
+        <link refid="js-addons_8h_source"/>
+      </node>
       <node id="7">
         <label>/home/lucasmull/Trabalho/orca/discord-internal.h</label>
         <link refid="discord-internal_8h"/>
@@ -15,6 +19,18 @@
       <node id="4">
         <label>/home/lucasmull/Trabalho/orca/github.h</label>
         <link refid="github_8h_source"/>
+      </node>
+      <node id="6">
+        <label>orca/common/user-agent.h</label>
+        <link refid="user-agent_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
       </node>
       <node id="1">
         <label>orca/common/types.h</label>
@@ -30,9 +46,9 @@
         <childnode refid="11" relation="include">
         </childnode>
       </node>
-      <node id="10">
-        <label>orca/common/js-addons.h</label>
-        <link refid="js-addons_8h_source"/>
+      <node id="3">
+        <label>orca/common/specs.h</label>
+        <link refid="specs_8h_source"/>
       </node>
       <node id="5">
         <label>/home/lucasmull/Trabalho/orca/reddit.h</label>
@@ -56,27 +72,11 @@
         <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="6">
-        <label>orca/common/user-agent.h</label>
-        <link refid="user-agent_8h_source"/>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-      </node>
       <node id="2">
         <label>/home/lucasmull/Trabalho/orca/discord.h</label>
         <link refid="discord_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
-      </node>
-      <node id="3">
-        <label>orca/common/specs.h</label>
-        <link refid="specs_8h_source"/>
       </node>
     </invincdepgraph>
       <sectiondef kind="define">

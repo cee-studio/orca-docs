@@ -22,12 +22,12 @@
         <childnode refid="5" relation="include">
         </childnode>
       </node>
+      <node id="3">
+        <label>json-actor-boxed.h</label>
+      </node>
       <node id="4">
         <label>types.h</label>
         <link refid="types_8h_source"/>
-      </node>
-      <node id="3">
-        <label>json-actor-boxed.h</label>
       </node>
       <node id="5">
         <label>logconf.h</label>

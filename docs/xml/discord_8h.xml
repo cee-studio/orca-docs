@@ -15,10 +15,6 @@
       <node id="2">
         <label>stdbool.h</label>
       </node>
-      <node id="4">
-        <label>types.h</label>
-        <link refid="types_8h_source"/>
-      </node>
       <node id="9">
         <label>specs-code/discord/all_functions.h</label>
       </node>
@@ -27,6 +23,10 @@
       </node>
       <node id="7">
         <label>specs-code/discord/all_enums.h</label>
+      </node>
+      <node id="4">
+        <label>types.h</label>
+        <link refid="types_8h_source"/>
       </node>
       <node id="5">
         <label>logconf.h</label>
@@ -59,15 +59,15 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="2">
+        <label>orca/common/specs.h</label>
+        <link refid="specs_8h_source"/>
+      </node>
       <node id="1">
         <label>/home/lucasmull/Trabalho/orca/discord.h</label>
         <link refid="discord_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-      </node>
-      <node id="2">
-        <label>orca/common/specs.h</label>
-        <link refid="specs_8h_source"/>
       </node>
     </invincdepgraph>
     <innerclass refid="structdiscord__session" prot="public">discord_session</innerclass>
