@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="types_8h" kind="file" language="C++">
+    <compoundname>types.h</compoundname>
+    <includedby refid="discord_8h" local="yes">/home/lucasmull/Trabalho/orca/discord.h</includedby>
+    <includedby refid="github_8h" local="yes">/home/lucasmull/Trabalho/orca/github.h</includedby>
+    <includedby refid="reddit_8h" local="yes">/home/lucasmull/Trabalho/orca/reddit.h</includedby>
+    <includedby refid="user-agent_8h" local="yes">orca/common/user-agent.h</includedby>
+    <includedby refid="websockets_8h" local="yes">orca/common/websockets.h</includedby>
+    <invincdepgraph>
+      <node id="10">
+        <label>orca/common/js-addons.h</label>
+        <link refid="js-addons_8h_source"/>
+      </node>
+      <node id="7">
+        <label>/home/lucasmull/Trabalho/orca/discord-internal.h</label>
+        <link refid="discord-internal_8h"/>
+      </node>
+      <node id="4">
+        <label>/home/lucasmull/Trabalho/orca/github.h</label>
+        <link refid="github_8h_source"/>
+      </node>
+      <node id="6">
+        <label>orca/common/user-agent.h</label>
+        <link refid="user-agent_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>orca/common/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>orca/common/specs.h</label>
+        <link refid="specs_8h_source"/>
+      </node>
+      <node id="5">
+        <label>/home/lucasmull/Trabalho/orca/reddit.h</label>
+        <link refid="reddit_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/home/lucasmull/Trabalho/orca/reddit-internal.h</label>
+        <link refid="reddit-internal_8h_source"/>
+      </node>
+      <node id="8">
+        <label>/home/lucasmull/Trabalho/orca/github-adapter.h</label>
+        <link refid="github-adapter_8h_source"/>
+      </node>
+      <node id="11">
+        <label>orca/common/websockets.h</label>
+        <link refid="websockets_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/lucasmull/Trabalho/orca/discord.h</label>
+        <link refid="discord_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="types_8h_1ab234ec8eeddc7f0abf7324b995fcfcb4" prot="public" static="no">
+        <name>ORCA_OK</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/common/types.h" line="14" column="9" bodyfile="orca/common/types.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="types_8h_1a8880e92512783e988d4755f9f03c4580" prot="public" static="no">
+        <name>ORCA_NO_RESPONSE</name>
+        <initializer>-1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/common/types.h" line="15" column="9" bodyfile="orca/common/types.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="types_8h_1a110d8f5a1faaf13ba1a763b7b260c82b" prot="public" static="no">
+        <name>ORCA_UNUSUAL_HTTP_CODE</name>
+        <initializer>-2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/common/types.h" line="16" column="9" bodyfile="orca/common/types.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="types_8h_1afc0b28e6e4fc98109015eb537f207bd7" prot="public" static="no">
+        <name>ORCA_MISSING_PARAMETER</name>
+        <initializer>-3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/common/types.h" line="17" column="9" bodyfile="orca/common/types.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="types_8h_1af21cf4909ec6435f4d6ced88922bcea8" prot="public" static="no">
+        <name>ORCA_BAD_PARAMETER</name>
+        <initializer>-4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/common/types.h" line="18" column="9" bodyfile="orca/common/types.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="types_8h_1a641eec95dca09556c3cbf01121015e28" prot="public" static="no">
+        <name>ORCA_BAD_JSON</name>
+        <initializer>-5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/common/types.h" line="19" column="9" bodyfile="orca/common/types.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="types_8h_1a8c10c2449cb2148f47b8a032af96dd60" prot="public" static="no">
+        <type>uint64_t</type>
+        <definition>typedef uint64_t u64_unix_ms_t</definition>
+        <argsstring></argsstring>
+        <name>u64_unix_ms_t</name>
+        <briefdescription>
+<para>unix time in ms </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/common/types.h" line="8" column="18" bodyfile="orca/common/types.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8h_1a9cf2c634d026f2b4665d1859fe596b90" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int ORCAcode</definition>
+        <argsstring></argsstring>
+        <name>ORCAcode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="todo_1_todo000012"><xreftitle>Todo</xreftitle><xrefdescription><para>add more error codes and a strerror() </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="orca/common/types.h" line="13" column="13" bodyfile="orca/common/types.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>TYPES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TYPES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint64_t<sp/>u64_unix_ms_t;<sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ORCAcode;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ORCA_OK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ORCA_NO_RESPONSE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ORCA_UNUSUAL_HTTP_CODE<sp/><sp/>-2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ORCA_MISSING_PARAMETER<sp/><sp/>-3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ORCA_BAD_PARAMETER<sp/><sp/><sp/><sp/><sp/><sp/>-4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ORCA_BAD_JSON<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>TYPES_H</highlight></codeline>
+    </programlisting>
+    <location file="orca/common/types.h"/>
+  </compounddef>
+</doxygen>

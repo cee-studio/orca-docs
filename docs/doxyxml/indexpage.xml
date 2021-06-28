@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>Orca: a bot framework for Discord etc.</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><bold>Please give a star if you like this project.</bold></para>
+<para>Join our Discord server: <ulink url="https://discord.gg/2jfycwXVM3"><image type="html" name="widget.png" inline="yes"></image>
+</ulink></para>
+<para>It provides an easy to use, easy to deploy, easy to debug way to build reliable Discord bots.</para>
+<sect1 id="index_1autotoc_md1">
+<title>Build</title>
+<sect2 id="index_1autotoc_md2">
+<title>For Ubuntu and Debian</title>
+<sect3 id="index_1autotoc_md3">
+<title>Install dependencies:</title>
+<para>The only dependencies that is needed is curl-7.64.0 or higher built with openssl <programlisting><codeline><highlight class="normal">sudo<sp/>apt-get<sp/>install<sp/>-y<sp/>build-essential<sp/></highlight></codeline>
+<codeline><highlight class="normal">sudo<sp/>apt-get<sp/>install<sp/>-y<sp/>libcurl4-openssl-dev<sp/>libssl-dev</highlight></codeline>
+</programlisting></para>
+</sect3>
+<sect3 id="index_1autotoc_md4">
+<title>Compile</title>
+<para><programlisting><codeline><highlight class="normal">make<sp/></highlight></codeline>
+</programlisting></para>
+</sect3>
+</sect2>
+<sect2 id="index_1autotoc_md5">
+<title>For Windows</title>
+<para><itemizedlist>
+<listitem><para>If you do not have Ubuntu or Debian but have Windows 10, you can install WSL2 and get either Ubuntu or Debian <ulink url="https://docs.microsoft.com/en-us/windows/wsl/install-win10">here</ulink>.</para>
+</listitem><listitem><para>If you have Windows but don&apos;t want to use WSL2, you can find a tutorial here</para>
+</listitem></itemizedlist>
+</para>
+</sect2>
+</sect1>
+<sect1 id="index_1autotoc_md6">
+<title>Run bot-echo</title>
+<para><orderedlist>
+<listitem><para>Get your bot token and paste it to <computeroutput>bot.config</computeroutput> to replace <computeroutput>YOUR-BOT-TOKEN</computeroutput>. There are well written instructions from the <ulink url="https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&amp;-getting-a-token">discord-irc</ulink> about how to get token and add a bot to a server.</para>
+</listitem><listitem><para>Invite your bot to a testing server. We can invite your bots to our testing servers.</para>
+</listitem><listitem><para>Run <computeroutput>./bot-echo.exe</computeroutput> in the same folder of <computeroutput>bot.config</computeroutput></para>
+</listitem></orderedlist>
+</para>
+<sect3 id="index_1autotoc_md7">
+<title>Test bot-echo</title>
+<para>Type any message in any public channel of the server that the bot is invited.</para>
+</sect3>
+<sect3 id="index_1autotoc_md8">
+<title>Terminate bot-echo</title>
+<para>Close the Terminal that bot-echo is running or type &quot;Ctrl-C&quot; to kill it.</para>
+</sect3>
+<sect3 id="index_1autotoc_md9">
+<title>Debug Memory Errors</title>
+<para><itemizedlist>
+<listitem><para>The recommanded method: Using SaiphC to build your bot, and run the executable. All runtime memory errors will be reported. The instruction to use SaiphC to build bots.</para>
+</listitem><listitem><para>Using valgrind, which is more convenient but cannot report all runtime memory errors. <programlisting><codeline><highlight class="normal">valgrind<sp/>your-bot.exe<sp/></highlight></codeline>
+</programlisting></para>
+</listitem></itemizedlist>
+</para>
+</sect3>
+</sect1>
+<sect1 id="index_1autotoc_md10">
+<title>Tutorial on how to make a bot</title>
+<para>Instructions on how to make a ping-pong bot is found here.</para>
+</sect1>
+<sect1 id="index_1autotoc_md11">
+<title>Discord C API Docs</title>
+<para><ulink url="https://orcaapi.readthedocs.io/en/latest/index.html">Discord C API docs</ulink>.</para>
+</sect1>
+<sect1 id="index_1autotoc_md12">
+<title>Participate in discussions and get tech support</title>
+<para>Join our discord server: <ulink url="https://discord.gg/2jfycwXVM3">https://discord.gg/2jfycwXVM3</ulink></para>
+</sect1>
+<sect1 id="index_1autotoc_md13">
+<title>Contributions are welcome!</title>
+<para>Check our Discord API&apos;s development Roadmap and Coding Guidelines to get started</para>
+<para>If you are not familiar with git and are not comformtable with creating pull requests without introducing merge commits, please check our Commit Guidelines.</para>
+<sect2 id="index_1autotoc_md14">
+<title>Design</title>
+<para>The primary design goals are:</para>
+<para><itemizedlist>
+<listitem><para>easy to use for the end users: we use multi-threading and synchronous IO to support concurrency so you only need to focus on the logic. We carefully craft the library to use computing resources efficiently so performance should never be an issue.</para>
+</listitem><listitem><para>easy to reason about the code: we use the most native data structures, the simplest algorithms, and intuitive interfaces.</para>
+</listitem><listitem><para>easy to debug (networking and logic) errors: extensive assertion and logging facilities.</para>
+</listitem><listitem><para>superior reliability</para>
+</listitem></itemizedlist>
+</para>
+</sect2>
+<sect2 id="index_1autotoc_md15">
+<title>Implementation</title>
+<para>Orca is implemented in plain C. The symbols are organized in a intuitive fashion to be easily identified by matching to the REST API docs.</para>
+<para>There are three purposes for this:</para>
+<para><orderedlist>
+<listitem><para>Reduce the need of thoroughly documenting every Orca API</para>
+</listitem><listitem><para>Reduce our user&apos;s cognitive burden of having to read both Orca API documenation and supported REST API documentations.</para>
+</listitem><listitem><para>The codebase becomes easier to navigate.</para>
+</listitem></orderedlist>
+</para>
+<para>Orca&apos;s implementation has minimum external dependencies to make bot deployment deadly simple.</para>
+<para>Keywords: libdiscord, discord library in C. </para>
+</sect2>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>
