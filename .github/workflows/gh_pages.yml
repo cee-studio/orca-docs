@@ -13,6 +13,9 @@ jobs:
       - name: Test
         run: echo $(pwd)
 
+      - name: Clone Orca
+        run: git clone https://github.com/cee-studio/orca
+
       - name: Doxygen Action
         uses: mattnotmitt/doxygen-action@v1.3.1
         with:
