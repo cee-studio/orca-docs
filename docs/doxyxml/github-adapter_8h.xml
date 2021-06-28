@@ -7,6 +7,25 @@
       <node id="3">
         <label>stdint.h</label>
       </node>
+      <node id="6">
+        <label>types.h</label>
+        <link refid="types_8h_source"/>
+      </node>
+      <node id="4">
+        <label>curl/curl.h</label>
+      </node>
+      <node id="7">
+        <label>logconf.h</label>
+      </node>
+      <node id="1">
+        <label>/home/lucasmull/Trabalho/orca/github-adapter.h</label>
+        <link refid="github-adapter_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>ntl.h</label>
+      </node>
       <node id="2">
         <label>user-agent.h</label>
         <link refid="user-agent_8h_source"/>
@@ -20,25 +39,6 @@
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
-      </node>
-      <node id="4">
-        <label>curl/curl.h</label>
-      </node>
-      <node id="6">
-        <label>types.h</label>
-        <link refid="types_8h_source"/>
-      </node>
-      <node id="7">
-        <label>logconf.h</label>
-      </node>
-      <node id="1">
-        <label>/home/lucasmull/Trabalho/orca/github-adapter.h</label>
-        <link refid="github-adapter_8h"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-      </node>
-      <node id="5">
-        <label>ntl.h</label>
       </node>
     </incdepgraph>
     <innerclass refid="structgithub__adapter" prot="public">github_adapter</innerclass>
