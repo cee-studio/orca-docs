@@ -2,7 +2,7 @@ name: github pages
 
 on:
   push:
-    branches: [master]
+    branches: [dev]
   pull_request:
     
 jobs:
@@ -10,9 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Test
-        run: |
-          echo $(pwd)
-          echo $(ls)
+        run: echo $(pwd)
 
       - name: Doxygen Action
         uses: mattnotmitt/doxygen-action@v1.3.1
