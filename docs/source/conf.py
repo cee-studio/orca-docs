@@ -45,6 +45,10 @@ extensions = [
         'breathe'
         ]
 
+pygments_style = 'sphinx'
+highlight_language = 'c'
+primary_domain = 'c'
+
 # Breathe Configuration
 
 breathe_domain_by_extension = { "h" : "c" }
@@ -56,6 +60,9 @@ breathe_show_enumvalue_initializer = True
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
+
+# The suffix of source filenames
+source_suffix = '.rst'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -77,7 +84,3 @@ else:
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
-
-pygments_style = 'sphinx'
-highlight_language = 'c'
-primary_domain = 'c'
