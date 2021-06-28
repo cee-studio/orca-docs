@@ -21,11 +21,11 @@ jobs:
           echo "Install Breathe"
           pip install breathe
 
-      - name: Breathe Action
-        run: make -C docs html
-
       - name: Doxygen Action
         uses: mattnotmitt/doxygen-action@v1.3.1
+
+      - name: Breathe Action
+        run: make -C docs html
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.7.3
