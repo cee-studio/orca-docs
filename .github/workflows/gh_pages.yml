@@ -15,6 +15,7 @@ jobs:
         run: |
           echo "Cloning Orca"
           git clone https://github.com/cee-studio/orca
+          cd orca && ./scripts/get-cee-utils.sh && cd ..
           echo "Install Sphinx"
           pip install sphinx
           pip install sphinx_rtd_theme
