@@ -28,8 +28,8 @@ jobs:
         with:
           working-directory: 'orca/'
 
-      - name: Prepare Orca-Docs
-        run: mv docs/xml ../docs/
+      - name: Move XML to Orca-Docs
+        run: mv orca/docs/xml docs/
 
       - name: Breathe Action
         run: make -C docs html
