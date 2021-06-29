@@ -29,7 +29,9 @@ jobs:
           working-directory: 'orca/'
 
       - name: Move XML to Orca-Docs
-        run: mv orca/docs/xml/* docs/xml
+        run: |
+          mkdir docs/xml
+          mv orca/docs/xml/* docs/xml
 
       - name: Breathe Action
         run: make -C docs html
