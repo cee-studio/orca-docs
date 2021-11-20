@@ -14,6 +14,11 @@ WebSockets 'now' timestamp
 
 .. doxygenfunction:: ws_timestamp
 
+Update 'now' timestamp
+----------------------
+
+.. doxygenfunction:: ws_timestamp_update
+
 Print CLOSE Opcode
 ------------------
 
