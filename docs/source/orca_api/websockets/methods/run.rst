@@ -27,6 +27,11 @@ Maintain Connection
 
 .. doxygenfunction:: ws_perform
 
+Cleanup Connection Resources
+----------------------------
+
+.. doxygenfunction:: ws_end
+
 Send Control-frames
 -------------------
 
