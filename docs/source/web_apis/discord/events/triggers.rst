@@ -16,6 +16,11 @@ Set On Command
 
 .. doxygenfunction:: discord_set_on_command
 
+Set On Commands
+--------------
+
+.. doxygenfunction:: discord_set_on_commands
+
 Set On Event Raw
 ----------------
 
