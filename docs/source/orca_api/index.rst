@@ -8,7 +8,7 @@ The following section outlines the Orca API
    :caption: Table of Contents
    :maxdepth: 2
 
+   Common <common/index>
    Modular Logging <logconf/index>
-   Types <types/index>
    NTL (null-terminated lists) <ntl/index>
    WebSockets <websockets/index>

@@ -20,12 +20,12 @@ Establishing Connection
 
 .. doxygenfunction:: ws_set_url
 .. doxygenfunction:: ws_start
-.. doxygenfunction:: ws_reqheader_add
+.. doxygenfunction:: ws_add_header
 
 Maintain Connection
 -------------------
 
-.. doxygenfunction:: ws_perform
+.. doxygenfunction:: ws_easy_run
 
 Cleanup Connection Resources
 ----------------------------

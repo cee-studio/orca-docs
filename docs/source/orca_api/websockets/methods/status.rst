@@ -17,14 +17,9 @@ Get Connection Status
 Is Connection Alive (Bool)
 --------------------------
 
-.. doxygenfunction:: ws_is_alive
+.. doxygendefine:: ws_is_alive
 
 Is Handle Functional (Bool)
 ---------------------------
 
-.. doxygenfunction:: ws_is_functional
-
-Main-Loop Thread (Bool)
------------------------
-
-.. doxygenfunction:: ws_same_thread
+.. doxygendefine:: ws_is_functional
