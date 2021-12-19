@@ -9,6 +9,6 @@ The following section outlines the Orca API
    :maxdepth: 2
 
    Common <common/index>
+   WebSockets <websockets/index>
    Modular Logging <logconf/index>
    NTL (null-terminated lists) <ntl/index>
-   WebSockets <websockets/index>
